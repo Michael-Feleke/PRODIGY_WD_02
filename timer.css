@@ -13,3 +13,19 @@ body {
   text-align: center;
   margin-top: 50px;
 }
+
+.stopwatch-display {
+  background: linear-gradient(to bottom right, #333333, #000000);
+  color: white;
+  padding: 20px;
+  margin: 0 auto;
+  font-size: 3em;
+  margin-bottom: 20px;
+  width: 320px; /* Adjust width and height as needed for the circular shape */
+  height: 320px; /* Adjust width and height as needed for the circular shape */
+  border-radius: 50%; /* Makes the element circular */
+  border: 2px solid #333; /* Border color and width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
