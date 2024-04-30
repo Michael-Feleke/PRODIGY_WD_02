@@ -29,3 +29,42 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+.button {
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+/* Green start button */
+/* Green start button */
+.start-button {
+  background-color: #2ecc71; /* Emerald green */
+  color: #fff; /* White text */
+}
+
+/* Yellowish pause button */
+.pause-button {
+  background-color: #f39c12; /* Orange */
+  color: #fff; /* White text */
+}
+
+/* Red reset button */
+.reset-button {
+  background-color: #e74c3c; /* Alizarin red */
+  color: #fff; /* White text */
+}
+
+/* Blue lap button */
+.lap-button {
+  background-color: #3498db; /* Dodger blue */
+  color: #fff; /* White text */
+}
