@@ -36,3 +36,11 @@ function resetStopwatch() {
   laps = [];
   updateLapsList();
 }
+
+function recordLap() {
+  if (running) {
+    const lapTime = calculateTimeElapsed(startTime);
+    laps.push(lapTime);
+    updateLapsList();
+  }
+}
