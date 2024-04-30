@@ -59,3 +59,21 @@ function updateStopwatch() {
     requestAnimationFrame(updateStopwatch);
   }
 }
+
+function calculateTimeElapsed(startTime) {
+  const currentTime = Date.now();
+  return currentTime - startTime;
+}
+
+function formatTime(time) {
+  const totalMilliseconds = Math.floor(time);
+  const milliseconds = totalMilliseconds % 1000;
+  const totalSeconds = Math.floor(totalMilliseconds / 1000);
+  const hours = Math.floor(totalSeconds / 3600);
+  const minutes = Math.floor((totalSeconds % 3600) / 60);
+  const seconds = totalSeconds % 60;
+  return `${pad(hours)}:${pad(minutes)}:${pad(seconds)}.${pad(
+    milliseconds,
+    3
+  )}`;
+}
