@@ -44,3 +44,18 @@ function recordLap() {
     updateLapsList();
   }
 }
+
+function updateStopwatch() {
+  if (running) {
+    const elapsedTime = calculateTimeElapsed(startTime);
+    const formattedTime = formatTime(elapsedTime);
+
+    // Only update if the time has changed significantly
+    if (formattedTime !== lastDisplayedTime) {
+      document.getElementById("display").innerText = formattedTime;
+      lastDisplayedTime = formattedTime;
+    }
+
+    requestAnimationFrame(updateStopwatch);
+  }
+}
