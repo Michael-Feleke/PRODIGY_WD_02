@@ -81,3 +81,14 @@ function formatTime(time) {
 function pad(num, size = 2) {
   return num.toString().padStart(size, "0");
 }
+
+function updateLapsList() {
+  const lapsList = document.getElementById("lapsList");
+  lapsList.innerHTML = "";
+  laps.forEach((lap, index) => {
+    const lapItem = document.createElement("li");
+    lapItem.className = "lap-item";
+    lapItem.innerText = `Lap ${index + 1}: ${formatTime(lap)}`;
+    lapsList.appendChild(lapItem);
+  });
+}
