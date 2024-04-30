@@ -44,28 +44,51 @@ body {
   transition: background-color 0.3s ease;
 }
 
-
 .start-button {
   background-color: #2ecc71;
-  color: #fff; 
+  color: #fff;
 }
-
 
 .pause-button {
   background-color: #f39c12;
-  color: #fff; 
+  color: #fff;
 }
-
 
 .reset-button {
-  background-color: #e74c3c; 
-  color: #fff; 
+  background-color: #e74c3c;
+  color: #fff;
 }
-
 .lap-button {
-  background-color: #3498db; 
-  color: #fff; 
+  background-color: #3498db;
+  color: #fff;
 }
 
 .button:hover {
-  opacity: 0.8; 
+  opacity: 0.8;
+}
+
+.laps-list {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px; 
+  border: 1px solid #ccc; 
+  border-radius: 8px; 
+  overflow-y: auto; 
+  max-height: 200px; 
+  color: white;
+}
+
+.lap-item {
+  padding: 10px;
+  background: linear-gradient(to bottom right, #333333, #000000);
+  border-bottom: 1px solid #ddd; 
+  transition: background-color 0.3s ease; 
+
+}
+.lap-item:last-child {
+  border-bottom: none; */
+}
+
+.lap-item:hover {
+  background: linear-gradient(to bottom right, #333333, #000000);
+}
