@@ -27,3 +27,12 @@ function pauseStopwatch() {
   pausedTime = Date.now() - startTime;
   document.getElementById("startBtn").innerText = "Resume";
 }
+
+function resetStopwatch() {
+  running = false;
+  pausedTime = 0;
+  document.getElementById("display").innerText = "00:00:00.000";
+  document.getElementById("startBtn").innerText = "Start";
+  laps = [];
+  updateLapsList();
+}
