@@ -9,32 +9,32 @@
   <body>
     <div class="stopwatch-container">
       <div id="display" class="stopwatch-display">00:00:00:000</div>
+      <button
+        id="startBtn"
+        class="button start-button"
+        onclick="startStopwatch()"
+      >
+        Start
+      </button>
+      <button
+        id="pauseBtn "
+        class="button pause-button"
+        onclick="pauseStopwatch()"
+      >
+        Pause
+      </button>
+      <button
+        id="resetBtn"
+        class="button reset-button"
+        onclick="resetStopwatch()"
+      >
+        Reset
+      </button>
+      <button id="lapBtn" class="button lap-button" onclick="recordLap()">
+        Lap
+      </button>
+      <ul id="lapsList" class="laps-list"></ul>
     </div>
-    <button
-      id="startBtn"
-      class="button start-button"
-      onclick="startStopwatch()"
-    >
-      Start
-    </button>
-    <button
-      id="pauseBtn "
-      class="button pause-button"
-      onclick="pauseStopwatch()"
-    >
-      Pause
-    </button>
-    <button
-      id="resetBtn"
-      class="button reset-button"
-      onclick="resetStopwatch()"
-    >
-      Reset
-    </button>
-    <button id="lapBtn" class="button lap-button" onclick="recordLap()">
-      Lap
-    </button>
-    <ul id="lapsList" class="laps-list"></ul>
     <script src="timer.js"></script>
   </body>
 </html>
