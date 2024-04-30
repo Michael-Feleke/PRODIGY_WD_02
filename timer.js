@@ -21,3 +21,9 @@ function startStopwatch() {
     document.getElementById("startBtn").innerText = "Resume";
   }
 }
+
+function pauseStopwatch() {
+  running = false;
+  pausedTime = Date.now() - startTime;
+  document.getElementById("startBtn").innerText = "Resume";
+}
