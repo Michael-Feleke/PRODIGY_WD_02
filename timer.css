@@ -5,7 +5,6 @@ body {
   height: 100vh;
   margin: 0;
   font-family: Arial, sans-serif;
-  /* Linear background gradient */
   background: linear-gradient(to bottom, #2980b9, #6ab1f4);
 }
 
@@ -21,51 +20,52 @@ body {
   margin: 0 auto;
   font-size: 3em;
   margin-bottom: 20px;
-  width: 320px; /* Adjust width and height as needed for the circular shape */
-  height: 320px; /* Adjust width and height as needed for the circular shape */
-  border-radius: 50%; /* Makes the element circular */
-  border: 2px solid #333; /* Border color and width */
+  width: 320px;
+  height: 320px; 
+  border-radius: 50%;
+  border: 2px solid #333;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+
 .button {
-  border: none;
-  color: white;
-  padding: 12px 24px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 8px;
-  transition: background-color 0.3s ease;
-}
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    outline: none; 
+  }
+  
+  .start-button {
+    background-color: #27ae60; 
+  }
+  
+  .pause-button {
+    background-color: #e67e22; 
+  }
+  
+  .reset-button {
+    background-color: #c0392b; 
+  }
+  
+  .lap-button {
+    background-color: #2980b9; 
+  }
+  
+  .button:hover {
+    opacity: 0.8; 
+  }
+  
 
-.start-button {
-  background-color: #2ecc71;
-  color: #fff;
-}
-
-.pause-button {
-  background-color: #f39c12;
-  color: #fff;
-}
-
-.reset-button {
-  background-color: #e74c3c;
-  color: #fff;
-}
-.lap-button {
-  background-color: #3498db;
-  color: #fff;
-}
-
-.button:hover {
-  opacity: 0.8;
-}
 
 .laps-list {
   list-style-type: none;
