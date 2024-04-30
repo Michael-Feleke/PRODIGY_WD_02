@@ -8,3 +8,8 @@ body {
   /* Linear background gradient */
   background: linear-gradient(to bottom, #2980b9, #6ab1f4);
 }
+
+.stopwatch-container {
+  text-align: center;
+  margin-top: 50px;
+}
