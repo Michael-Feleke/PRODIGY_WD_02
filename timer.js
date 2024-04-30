@@ -77,3 +77,7 @@ function formatTime(time) {
     3
   )}`;
 }
+
+function pad(num, size = 2) {
+  return num.toString().padStart(size, "0");
+}
